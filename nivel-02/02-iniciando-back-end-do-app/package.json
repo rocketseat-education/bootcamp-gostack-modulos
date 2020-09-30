@@ -12,6 +12,7 @@
     "date-fns": "^2.16.1",
     "express": "^4.17.1",
     "pg": "^8.3.3",
+    "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.27",
     "uuidv4": "^6.2.3"
   },
