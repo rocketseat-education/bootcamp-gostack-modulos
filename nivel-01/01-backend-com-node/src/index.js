@@ -33,7 +33,18 @@ const projects = [];
 function logRequests(request, response, next) {
   const { method, url } = request;
 
-  const logLabel = `[${method.toUppercase()} ${url}]`;
+  /**
+   * O método "toUppercase" precisa ser chamado sem os parênteses para que não 
+   * apresente erro no insomnia, por exemplo
+   * 
+   * Antes:
+   * const logLabel = `[${method.toUppercase()} ${url}]`;
+   * 
+   * Depois:
+   * const logLabel = `[${method.toUppercase} ${url}]`;
+   */
+  
+  const logLabel = `[${method.toUppercase} ${url}]`;
 
   console.time(logLabel);
 
