@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "celebrate": "^13.0.4",
     "cors": "^2.8.5",
     "date-fns": "^2.16.1",
     "express": "^4.17.1",
